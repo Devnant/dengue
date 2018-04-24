@@ -7,4 +7,4 @@ V8;
 stargazer;
 rCharts;
 dynlm;
-prettydoc.
+prettydoc. Para executar basta executar o script ShinyServerRun.R no R.
