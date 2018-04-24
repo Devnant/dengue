@@ -7,4 +7,4 @@ V8;
 stargazer;
 rCharts;
 dynlm;
-prettydoc. Para executar basta executar o script ShinyServerRun.R no R.
+prettydoc. Para executar clonar o repositório na máquina local e executar o script ShinyServerRun.R dentro do R.
