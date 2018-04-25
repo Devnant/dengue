@@ -29,7 +29,7 @@ Este infográfico apresenta relatório iterativo referente ao levantamento reali
 
 2-	A pesquisa revela relação entre valores de despesa orçamentários e casos confirmados de dengue, porém em uma menor intensidade. Modelo linear de regressão LOG-LOG detectou que 37,97% dos desvios de valores de despesa em torno da média são explicados pelos desvios de casos de dengue.
 
-3-	O modelo estima que para cada aumento de 100 ocorrências de dengue há um correspondente acréscimo de R$3700,00 de despesa por parte da PBH.
+3-	O modelo estima que para cada 1% de aumento de ocorrências de dengue há um correspondente acréscimo de 36,11% de despesa por parte da PBH.
 
 
 
@@ -97,7 +97,7 @@ shinyAppDir(
 - Os dados de casos confirmados de dengue foram obtidos mensalmente entre 2015 a 2017 através de relatórios do Balanço da Dengue, disponível em http://www.pbh.gov.br/smsa/dengue/balanco_dengue.php.
 - Os dados do Google Trends consideraram a delimitação da região Minas Gerais dentro do período 2015 a 2017, disponível em https://trends.google.com.br/trends/.
 - Os dados de Despesa Orçamentária da PBH referem-se aos valores liquidados conforme Relatório de Empenhos para os exercícios de 2015 a 2017, no Portal SICOM, do TCEMG.
-- Todas as variáveis sofreram transformação logarítmica neperiana para fins de visualização em gráficos do tipo “scatter chart”. Para interpretação, foi transformado o coeficiente de regressão utilizando função exponencial de base e.
+- Todas as variáveis sofreram transformação logarítmica neperiana para fins de visualização em gráficos do tipo “scatter chart”. 
 - Para informações sobre modelos de regressão lineares LOG-LOG, favor acessar https://pt.wikipedia.org/wiki/Regress%C3%A3o_linear.
 
 
