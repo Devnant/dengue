@@ -21,15 +21,18 @@ knitr::opts_chunk$set(echo = TRUE)
 &nbsp;
 
 Este infográfico apresenta relatório iterativo referente ao levantamento realizado sobre casos de ocorrência de dengue, no município de Belo Horizonte, considerando os dados extraídos do (i) Levantamento do Índice Rápido do Aedes aegypti – LIRAa da Prefeitura Municipal de Belo Horizonte – PBH; (ii) da Execução Orçamentária da Despesa do Portal SICOM, do Tribunal de Contas do Estado de Minas Gerais – TCEMG; do (iii) resultado de interesse de pesquisa de usuários de internet da região de Minas Gerais acerca do termo “sintomas da dengue”, disponibilizado pela ferramenta Google Trends e (iv) Boletim Epidemiológico publicado pela Secretaria de estado de Saúde do estado de Minas Gerais – SES.
+&nbsp;
+
+Além disso, foi construída uma ferramenta que permite ao usuário analisar modelos de regressão linear do tipo LOG-LOG com uma variável explicativa, selecionando o período desejado.
 
 
 ## Principais resultados
 
-1-	A pesquisa revela forte relação entre casos de dengue e interesse de pesquisa do Google Trends. Modelo linear de regressão LOG-LOG detectou que 74,46% dos desvios de casos confirmados em torno da média são explicados pelos desvios do interesse de pesquisa.
+1-	A pesquisa revela forte relação entre casos de dengue e interesse de pesquisa do Google Trends. Modelo linear de regressão LOG-LOG detectou que no período janeiro 2015 a dezembro de 2017 66,4% dos desvios de casos confirmados em torno da média são explicados pelos desvios do interesse de pesquisa. Tal proporção aumenta para 85,8% se consideradas apenas as observações a partir de 2016.
 
-2-	A pesquisa revela relação entre valores de despesa orçamentários e casos confirmados de dengue, porém em uma menor intensidade. Modelo linear de regressão LOG-LOG detectou que 37,97% dos desvios de valores de despesa em torno da média são explicados pelos desvios de casos de dengue.
+2-	A pesquisa não revela relação entre valores de despesa orçamentários e casos confirmados de dengue. Apenas se for considerado o exercício de 2016 que o modelo linear de regressão LOG-LOG detecta relação entre essas variáveis. Nesse período, 45,4% dos desvios de valores de despesa em torno da média foram explicados pelos desvios de casos de dengue.
 
-3-	O modelo estima que para cada 1% de aumento de ocorrências de dengue há um correspondente acréscimo de 36,11% de despesa por parte da PBH.
+3-	O modelo estima que, em 2016, para cada 10% de aumento de ocorrências de dengue há um correspondente acréscimo de 2,4% de despesa por parte da PBH.
 
 
 
@@ -85,7 +88,7 @@ shinyAppDir(
 shinyAppDir(
   "./reg",
   options = list(
-    width = "100%", height = 650
+    width = "100%", height = 750
   )
 )
 ```
