@@ -102,7 +102,9 @@ shinyAppDir(
 - Os dados de Despesa Orçamentária da PBH referem-se aos valores liquidados conforme Relatório de Empenhos para os exercícios de 2015 a 2017, no Portal SICOM, do TCEMG.
 - Todas as variáveis sofreram transformação logarítmica neperiana para fins de visualização em gráficos do tipo “scatter chart”. 
 - Para informações sobre modelos de regressão lineares LOG-LOG, favor acessar https://pt.wikipedia.org/wiki/Regress%C3%A3o_linear.
-
+- Replicabilidade em outros municípios depende de existência de base de dados orçamentária detalhando gastos com dengue.
+- Programas utilizados: R Studio e Tableau Desktop/Public.
+- Código fonte da página, inclusive pacotes R necessários para importar, encontra-se em: https://github.com/devnant/dengue.
 
 
 ## Autores
