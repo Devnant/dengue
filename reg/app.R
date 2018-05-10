@@ -1,7 +1,7 @@
 library(shiny)
 library(dynlm)
-library(zoo)
 library(stargazer)
+
 reg<-readRDS("reg.rds")
 
 # Define UI ----
@@ -21,8 +21,8 @@ ui <- fluidPage(
     mainPanel(
       br(),
       br(),
-      uiOutput("myreg",position="right")
-    )
+      uiOutput("myreg")
+      )
   ))
 
 
@@ -94,8 +94,7 @@ server = function(input, output) {
       score<-dynlm(Media~Casos,data=reg,start=c(ys,ms),end=c(ye,me))
     }
     return(HTML((stargazer(score,type="html"))))
-    
-  })
+    })
 }
 # Run the app ----
 shinyApp(ui = ui, server = server)
